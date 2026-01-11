@@ -21,6 +21,20 @@ To create a new set of templates other than `MyCompany`, please follow the instr
 `\MyCompany\Deploy_MyCompany_Templates.bat`. (The original source code control system used for this software product was 
 Subversion; just ignore references to it.)
 
+### macOS Notes (Additional Instructions)
+
+These steps apply specifically to macOS and do not replace the Windows instructions above.
+
+- Clone the repository to a macOS path such as `/Users/<you>/Templates` and use that as the base folder.
+- The VBA password is in `/Users/<you>/Templates/Generic/BaseTemplate/Passwords.txt`.
+- The master template is in `/Users/<you>/Templates/Generic/BaseTemplate/BaseTemplate.dotm`.
+- The sub-templates are in:
+  - `/Users/<you>/Templates/MyCompany/MyCompany_Form`
+  - `/Users/<you>/Templates/MyCompany/MyCompany_Letter`
+  - `/Users/<you>/Templates/MyCompany/MyCompany_Main`
+- The Windows deployment script `\MyCompany\Deploy_MyCompany_Templates.bat` does not run on macOS. If you need a macOS
+  deployment workflow, create a shell script or perform the equivalent copy steps manually.
+
 ## Use
 
 Please read the user manual in `\Generic\UserManual` - this will be deployed together with a new template set.
